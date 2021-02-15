@@ -5,7 +5,7 @@ In Vs code editor,
 type this command to run the app in development mode.
 expo start
 
-One can view the aapp on the android and ios device (download expo go from playstore or appstore) by scanning the qr code which will be generated.
+One can view the app on the android and ios device (download expo go from playstore or appstore) by scanning the qr code which will be generated.
 
 expo build:web
 Builds the app for production mode
