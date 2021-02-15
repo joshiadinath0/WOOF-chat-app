@@ -1,5 +1,5 @@
 # WOOF-chat-app
-A simple chat app named WOOF! created using Exo React native
+A simple chat app named WOOF! created using Expo React native
 
 In Vs code editor,
 type this command to run the app in development mode.
