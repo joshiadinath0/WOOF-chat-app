@@ -2,8 +2,9 @@
 A simple chat app named WOOF! created using Exo React native
 
 In Vs code editor,
-type this command to run the ap in development mode.
-expo startOnce
+type this command to run the app in development mode.
+expo start
+
 One can view the aapp on the android and ios device (download expo go from playstore or appstore) by scanning the qr code which will be generated.
 
 expo build:web
