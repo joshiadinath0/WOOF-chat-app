@@ -10,6 +10,7 @@ import {
 	TextInput,
 	TouchableWithoutFeedback,
 	Keyboard,
+	Alert
 } from "react-native";
 import { Avatar } from "react-native-elements";
 import { AntDesign, FontAwesome, Ionicons } from "@expo/vector-icons";
@@ -89,6 +90,12 @@ const ChatScreen = ({ navigation, route }) => {
 
 	const sendMessage = () => {
 		Keyboard.dismiss();
+
+		if (!input) {
+			Alert.alert("Error", "No message typed");
+			return;
+		} 
+
 		db.collection("chats").doc(route.params.id).collection("messages").add({
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 			message: input,
