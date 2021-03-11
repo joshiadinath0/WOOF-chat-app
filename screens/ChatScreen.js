@@ -10,7 +10,7 @@ import {
 	TextInput,
 	TouchableWithoutFeedback,
 	Keyboard,
-	Alert
+	Vibration
 } from "react-native";
 import { Avatar } from "react-native-elements";
 import { AntDesign, FontAwesome, Ionicons } from "@expo/vector-icons";
@@ -91,8 +91,9 @@ const ChatScreen = ({ navigation, route }) => {
 	const sendMessage = () => {
 		Keyboard.dismiss();
 
+		// If message text field is empty, don't send message and vibrate for 70ms
 		if (!input) {
-			Alert.alert("Error", "No message typed");
+			Vibration.vibrate(60);
 			return;
 		} 
 
