@@ -10,11 +10,11 @@ import {
 	TextInput,
 	TouchableWithoutFeedback,
 	Keyboard,
-	Vibration
+	Vibration,
+	SafeAreaView
 } from "react-native";
 import { Avatar } from "react-native-elements";
 import { AntDesign, FontAwesome, Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { auth, db } from "../firebase";
 import * as firebase from "firebase";
